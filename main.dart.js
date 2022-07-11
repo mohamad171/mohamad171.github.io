@@ -36034,7 +36034,7 @@ N_(a,b){var s=0,r=A.S(t.c),q,p=this,o,n
 var $async$q8=A.T(function(c,d){if(c===1)return A.P(d,r)
 while(true)switch(s){case 0:o=t.N
 s=3
-return A.X(p.a86("http://decorchi.herokuapp.com/signin",A.at(["username",a,"password",b],o,o),t.z),$async$q8)
+return A.X(p.a86("https://decorchi.herokuapp.com/signin",A.at(["username",a,"password",b],o,o),t.z),$async$q8)
 case 3:n=d
 if(new A.ie(n.c).jm(200,299)){q=n
 s=1
@@ -36050,7 +36050,7 @@ var $async$t_=A.T(function(a,b){if(a===1)return A.P(b,r)
 while(true)switch(s){case 0:n=p.id
 if(p.db)A.O("Can not emit events to disposed clients")
 s=3
-return A.X(p.gzL().pQ(0,"http://decorchi.herokuapp.com/customers",null,null,n,null,t.z),$async$t_)
+return A.X(p.gzL().pQ(0,"https://decorchi.herokuapp.com/customers",null,null,n,null,t.z),$async$t_)
 case 3:o=b
 if(new A.ie(o.c).jm(200,299)){q=o
 s=1
@@ -36064,7 +36064,7 @@ lR(a){return this.a4D(a)},
 a4D(a){var s=0,r=A.S(t.c),q,p=this,o,n
 var $async$lR=A.T(function(b,c){if(b===1)return A.P(c,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.Iw(0,"http://decorchi.herokuapp.com/"+("customers/"+a),p.id,t.z),$async$lR)
+return A.X(p.Iw(0,"https://decorchi.herokuapp.com/"+("customers/"+a),p.id,t.z),$async$lR)
 case 3:n=c
 if(new A.ie(n.c).jm(200,299)){q=n
 s=1
@@ -36078,7 +36078,7 @@ lq(a,b,c){return this.a2w(a,b,c)},
 a2w(a,b,c){var s=0,r=A.S(t.c),q,p=this,o,n
 var $async$lq=A.T(function(d,e){if(d===1)return A.P(e,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.ps("http://decorchi.herokuapp.com/customers",A.at(["name",a,"telephone",b,"address",c],t.N,t.ob),p.id,t.z),$async$lq)
+return A.X(p.ps("https://decorchi.herokuapp.com/customers",A.at(["name",a,"telephone",b,"address",c],t.N,t.ob),p.id,t.z),$async$lq)
 case 3:n=e
 if(new A.ie(n.c).jm(200,299)){q=n
 s=1
@@ -36092,7 +36092,7 @@ mD(a,b,c,d){return this.a9u(a,b,c,d)},
 a9u(a,b,c,d){var s=0,r=A.S(t.c),q,p=this,o,n
 var $async$mD=A.T(function(e,f){if(e===1)return A.P(f,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.ps("http://decorchi.herokuapp.com/"+("customers/"+a),A.at(["id",a,"name",b,"telephone",c,"address",d],t.N,t.X),p.id,t.z),$async$mD)
+return A.X(p.ps("https://decorchi.herokuapp.com/"+("customers/"+a),A.at(["id",a,"name",b,"telephone",c,"address",d],t.N,t.X),p.id,t.z),$async$mD)
 case 3:n=f
 if(new A.ie(n.c).jm(200,299)){q=n
 s=1
@@ -36106,7 +36106,7 @@ rs(a,b,c,d,e,f,g,h){return this.a2x(a,b,c,d,e,f,g,h)},
 a2x(a,b,c,d,e,f,g,h){var s=0,r=A.S(t.c),q,p=this,o,n
 var $async$rs=A.T(function(i,j){if(i===1)return A.P(j,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.ps("http://decorchi.herokuapp.com/customers-item/",A.at(["customer",a,"item_type",b,"position",c,"width",d,"heigth",e,"heigth",e,"katibeh_zavieh",f,"has_katibeh",g,"description",h],t.N,t.K),p.id,t.z),$async$rs)
+return A.X(p.ps("https://decorchi.herokuapp.com/customers-item/",A.at(["customer",a,"item_type",b,"position",c,"width",d,"heigth",e,"heigth",e,"katibeh_zavieh",f,"has_katibeh",g,"description",h],t.N,t.K),p.id,t.z),$async$rs)
 case 3:n=j
 if(new A.ie(n.c).jm(200,299)){q=n
 s=1
@@ -36120,7 +36120,7 @@ uo(a,b,c,d,e,f,g,h,i){return this.a9v(a,b,c,d,e,f,g,h,i)},
 a9v(a,b,c,d,e,f,g,h,i){var s=0,r=A.S(t.c),q,p=this,o,n
 var $async$uo=A.T(function(j,k){if(j===1)return A.P(k,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.ps("http://decorchi.herokuapp.com/"+("customers-item/"+a),A.at(["id",a,"customer",b,"item_type",c,"position",d,"width",e,"heigth",f,"heigth",f,"katibeh_zavieh",g,"has_katibeh",h,"description",i],t.N,t.K),p.id,t.z),$async$uo)
+return A.X(p.ps("https://decorchi.herokuapp.com/"+("customers-item/"+a),A.at(["id",a,"customer",b,"item_type",c,"position",d,"width",e,"heigth",f,"heigth",f,"katibeh_zavieh",g,"has_katibeh",h,"description",i],t.N,t.K),p.id,t.z),$async$uo)
 case 3:n=k
 if(new A.ie(n.c).jm(200,299)){q=n
 s=1
@@ -36134,7 +36134,7 @@ lS(a){return this.a4E(a)},
 a4E(a){var s=0,r=A.S(t.c),q,p=this,o,n
 var $async$lS=A.T(function(b,c){if(b===1)return A.P(c,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.Iw(0,"http://decorchi.herokuapp.com/"+("customers-item/"+a),p.id,t.z),$async$lS)
+return A.X(p.Iw(0,"https://decorchi.herokuapp.com/"+("customers-item/"+a),p.id,t.z),$async$lS)
 case 3:n=c
 if(new A.ie(n.c).jm(200,299)){q=n
 s=1
