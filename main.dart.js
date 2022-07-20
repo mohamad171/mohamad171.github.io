@@ -35752,7 +35752,7 @@ MM(a,b){var s=0,r=A.U(t.c),q,p=this,o,n
 var $async$pI=A.V(function(c,d){if(c===1)return A.R(d,r)
 while(true)switch(s){case 0:o=t.N
 s=3
-return A.X(p.a6s("http://decorchi.moderndata.ir/signin",A.as(["username",a,"password",b],o,o),t.z),$async$pI)
+return A.X(p.a6s("https://decorchi.moderndata.ir/signin",A.as(["username",a,"password",b],o,o),t.z),$async$pI)
 case 3:n=d
 if(new A.id(n.c).jg(200,299)){q=n
 s=1
@@ -35768,7 +35768,7 @@ var $async$rM=A.V(function(a,b){if(a===1)return A.R(b,r)
 while(true)switch(s){case 0:n=p.id
 if(p.db)A.Q("Can not emit events to disposed clients")
 s=3
-return A.X(p.gzz().pu(0,"http://decorchi.moderndata.ir/customers",null,null,n,null,t.z),$async$rM)
+return A.X(p.gzz().pu(0,"https://decorchi.moderndata.ir/customers",null,null,n,null,t.z),$async$rM)
 case 3:o=b
 if(new A.id(o.c).jg(200,299)){q=o
 s=1
@@ -35782,7 +35782,7 @@ lY(a){return this.a2H(a)},
 a2H(a){var s=0,r=A.U(t.c),q,p=this,o,n
 var $async$lY=A.V(function(b,c){if(b===1)return A.R(c,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.IB(0,"http://decorchi.moderndata.ir/"+("customers/"+a),p.id,t.z),$async$lY)
+return A.X(p.IB(0,"https://decorchi.moderndata.ir/"+("customers/"+a),p.id,t.z),$async$lY)
 case 3:n=c
 if(new A.id(n.c).jg(200,299)){q=n
 s=1
@@ -35796,7 +35796,7 @@ lC(a,b,c){return this.a0J(a,b,c)},
 a0J(a,b,c){var s=0,r=A.U(t.c),q,p=this,o,n
 var $async$lC=A.V(function(d,e){if(d===1)return A.R(e,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.pc("http://decorchi.moderndata.ir/customers",A.as(["name",a,"telephone",b,"address",c],t.N,t.ob),p.id,t.z),$async$lC)
+return A.X(p.pc("https://decorchi.moderndata.ir/customers",A.as(["name",a,"telephone",b,"address",c],t.N,t.ob),p.id,t.z),$async$lC)
 case 3:n=e
 if(new A.id(n.c).jg(200,299)){q=n
 s=1
@@ -35810,7 +35810,7 @@ mD(a,b,c,d){return this.a7K(a,b,c,d)},
 a7K(a,b,c,d){var s=0,r=A.U(t.c),q,p=this,o,n
 var $async$mD=A.V(function(e,f){if(e===1)return A.R(f,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.pc("http://decorchi.moderndata.ir/"+("customers/"+a),A.as(["id",a,"name",b,"telephone",c,"address",d],t.N,t.X),p.id,t.z),$async$mD)
+return A.X(p.pc("https://decorchi.moderndata.ir/"+("customers/"+a),A.as(["id",a,"name",b,"telephone",c,"address",d],t.N,t.X),p.id,t.z),$async$mD)
 case 3:n=f
 if(new A.id(n.c).jg(200,299)){q=n
 s=1
@@ -35824,7 +35824,7 @@ rg(a,b,c,d,e,f,g,h){return this.a0K(a,b,c,d,e,f,g,h)},
 a0K(a,b,c,d,e,f,g,h){var s=0,r=A.U(t.c),q,p=this,o,n
 var $async$rg=A.V(function(i,j){if(i===1)return A.R(j,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.pc("http://decorchi.moderndata.ir/customers-item/",A.as(["customer",a,"item_type",b,"position",c,"width",d,"heigth",e,"heigth",e,"katibeh_zavieh",f,"has_katibeh",g,"description",h],t.N,t.K),p.id,t.z),$async$rg)
+return A.X(p.pc("https://decorchi.moderndata.ir/customers-item/",A.as(["customer",a,"item_type",b,"position",c,"width",d,"heigth",e,"heigth",e,"katibeh_zavieh",f,"has_katibeh",g,"description",h],t.N,t.K),p.id,t.z),$async$rg)
 case 3:n=j
 if(new A.id(n.c).jg(200,299)){q=n
 s=1
@@ -35838,7 +35838,7 @@ uk(a,b,c,d,e,f,g,h,i){return this.a7L(a,b,c,d,e,f,g,h,i)},
 a7L(a,b,c,d,e,f,g,h,i){var s=0,r=A.U(t.c),q,p=this,o,n
 var $async$uk=A.V(function(j,k){if(j===1)return A.R(k,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.pc("http://decorchi.moderndata.ir/"+("customers-item/"+a),A.as(["id",a,"customer",b,"item_type",c,"position",d,"width",e,"heigth",f,"heigth",f,"katibeh_zavieh",g,"has_katibeh",h,"description",i],t.N,t.K),p.id,t.z),$async$uk)
+return A.X(p.pc("https://decorchi.moderndata.ir/"+("customers-item/"+a),A.as(["id",a,"customer",b,"item_type",c,"position",d,"width",e,"heigth",f,"heigth",f,"katibeh_zavieh",g,"has_katibeh",h,"description",i],t.N,t.K),p.id,t.z),$async$uk)
 case 3:n=k
 if(new A.id(n.c).jg(200,299)){q=n
 s=1
@@ -35852,7 +35852,7 @@ lZ(a){return this.a2I(a)},
 a2I(a){var s=0,r=A.U(t.c),q,p=this,o,n
 var $async$lZ=A.V(function(b,c){if(b===1)return A.R(c,r)
 while(true)switch(s){case 0:s=3
-return A.X(p.IB(0,"http://decorchi.moderndata.ir/"+("customers-item/"+a),p.id,t.z),$async$lZ)
+return A.X(p.IB(0,"https://decorchi.moderndata.ir/"+("customers-item/"+a),p.id,t.z),$async$lZ)
 case 3:n=c
 if(new A.id(n.c).jg(200,299)){q=n
 s=1
