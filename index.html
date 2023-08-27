@@ -51,7 +51,7 @@
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets>
-            <video src="https://arjs-cors-proxy.herokuapp.com/https://ioiolab.com/project/ar-test/video/fran.mp4"
+            <video src="https://static.videezy.com/system/resources/previews/000/044/089/original/Line_Twirl_x264.mp4"
                 preload="auto" id="vid" response-type="arraybuffer" loop
                 crossorigin webkit-playsinline autoplay muted playsinline>
             </video>
@@ -59,9 +59,8 @@
 
         <a-nft
             videohandler
-            type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://ioiolab.com/project/ar-test/trex/trex-image/trex'
-            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
-        >
+            type='nft' url='assets/default-marker'
+            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
             <a-video
                 src="#vid"
                 position='50 150 -100'
