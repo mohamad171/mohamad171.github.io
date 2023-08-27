@@ -42,12 +42,14 @@
                 this.vid = document.querySelector("#vid");
 
                 marker.addEventListener('markerFound', function () {
+                    console.log("Found")
                     this.vid.play();
                 }.bind(this));
 
 		marker.addEventListener('markerLost', function() {
 			this.vid.pause();
 			this.vid.currentTime = 0;
+            console.log("Lost")
 		}.bind(this));
             }
         });
@@ -93,7 +95,7 @@
 
         <a-nft
             videohandler
-            type='nft' url='assets/pinball'
+            type='nft' url='assets/default-marker'
             smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
         >
             <a-video
