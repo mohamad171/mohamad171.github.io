@@ -28,30 +28,64 @@
 </html> -->
 
 
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Ar.js Image Tracking</title>
-  <link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1.3.0/dist/aframe-master.min.js"></script>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<script src='https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js'></script>
-<script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
-<!-- minimal loader shown until image descriptors are loaded -->
-  <div class="arjs-loader">
-    <div>Loading, please wait...</div>
-  </div>
-    
+<!--<script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>-->
+<script src='assets/aframe-ar-nft.js'></script>
+
+<script>
+    window.onload = function() {
+        AFRAME.registerComponent('videohandler', {
+            init: function () {
+                var marker = this.el;
+
+                this.vid = document.querySelector("#vid");
+
+                marker.addEventListener('markerFound', function () {
+                    this.vid.play();
+                }.bind(this));
+
+		marker.addEventListener('markerLost', function() {
+			this.vid.pause();
+			this.vid.currentTime = 0;
+		}.bind(this));
+            }
+        });
+    };
+</script>
+
+<style>
+    .arjs-loader {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arjs-loader div {
+        text-align: center;
+        font-size: 1.25em;
+        color: white;
+    }
+</style>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <div class="arjs-loader">
+        <div>Loading, please wait...</div>
+    </div>
     <a-scene
         vr-mode-ui="enabled: false;"
-        renderer='antialias: true; alpha: true; precision: mediump;'
+        renderer='antialias: true; alpha: true; precision: medium;'
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets>
-            <video src="https://static.videezy.com/system/resources/previews/000/044/089/original/Line_Twirl_x264.mp4"
+            <video src="assets/mov_bbb.mp4"
                 preload="auto" id="vid" response-type="arraybuffer" loop
                 crossorigin webkit-playsinline autoplay muted playsinline>
             </video>
@@ -59,12 +93,13 @@
 
         <a-nft
             videohandler
-            type='nft' url='assets/default-marker'
-            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
+            type='nft' url='assets/pinball'
+            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+        >
             <a-video
                 src="#vid"
                 position='50 150 -100'
-                rotation="90 0 0"
+                rotation='90 0 180'
                 width='300'
                 height='175'
                 >
@@ -72,8 +107,5 @@
         </a-nft>
 		<a-entity camera></a-entity>
 	</a-scene>
-<!-- partial -->
-  <script  src="assets/script.js"></script>
-
 </body>
-</html>
+
