@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 
 <head>
@@ -13,26 +13,68 @@
 <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false;" loading-screen="enabled: false;"
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded gesture-detector>
-        <!-- <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker.patt"
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker.patt"
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
 
             <a-image src="assets/asset.jpeg" scale="1 1 1" class="clickable" rotation="-90 0 0"
                 gesture-handler></a-image>
-
-        </a-marker> -->
-        <a-nft
-      type="nft"
-      url="assets/default-marker"
-      smooth="true"
-      smoothCount="10"
-      smoothTolerance=".01"
-      smoothThreshold="5">
-      <a-image src="assets/asset.jpeg" scale="1 1 1" class="clickable" rotation="-90 0 0"
-                gesture-handler></a-image>
-      </a-nft>
+                
+        </a-marker>
 
         <a-entity camera></a-entity>
     </a-scene>
 </body>
 
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Ar.js Image Tracking</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src='https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js'></script>
+<script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
+<!-- minimal loader shown until image descriptors are loaded -->
+  <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div>
+    
+    <a-scene
+        vr-mode-ui="enabled: false;"
+        renderer='antialias: true; alpha: true; precision: mediump;'
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+
+        <a-assets>
+            <video src="https://arjs-cors-proxy.herokuapp.com/https://ioiolab.com/project/ar-test/video/fran.mp4"
+                preload="auto" id="vid" response-type="arraybuffer" loop
+                crossorigin webkit-playsinline autoplay muted playsinline>
+            </video>
+        </a-assets>
+
+        <a-nft
+            videohandler
+            type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://ioiolab.com/project/ar-test/trex/trex-image/trex'
+            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+        >
+            <a-video
+                src="#vid"
+                position='50 150 -100'
+                rotation="90 0 0"
+                width='300'
+                height='175'
+                >
+            </a-video>
+        </a-nft>
+		<a-entity camera></a-entity>
+	</a-scene>
+<!-- partial -->
+  <script  src="assets/script.js"></script>
+
+</body>
 </html>
