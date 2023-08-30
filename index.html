@@ -122,14 +122,10 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: assets/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <div id="card">
-            <video id="video" autoplay="autoplay" controls="controls" loop="loop">
-                <source src="assets/mov_bbb.mp4" type="video/mp4">
-            </video>
-            <button>Go to Website</button>
-        
-        </div>
-        
+        <video id="card" autoplay="autoplay" controls="controls" loop="loop">
+            <source src="assets/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <button>Go to Website</button>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -140,10 +136,10 @@
     <script>
         const sceneEl = document.querySelector('a-scene');
         sceneEl.addEventListener("targetFound", event => {
-          document.getElementById("video").play();
+          document.getElementById("card").play();
         });
         sceneEl.addEventListener("targetLost", event => {
-            document.getElementById("video").pause();
+            document.getElementById("card").pause();
         });
     </script>
   </body>
