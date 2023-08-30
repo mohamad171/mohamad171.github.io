@@ -137,6 +137,9 @@
         sceneEl.addEventListener("targetFound", event => {
           document.getElementById("card").play();
         });
+        sceneEl.addEventListener("targetLost", event => {
+            document.getElementById("card").pause();
+        });
     </script>
   </body>
 </html>
