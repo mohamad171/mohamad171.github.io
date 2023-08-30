@@ -130,5 +130,11 @@
         <a-plane src="#card" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
       </a-entity>
     </a-scene>
+    <script>
+        const sceneEl = document.querySelector('a-scene');
+        sceneEl.addEventListener("targetFound", event => {
+          alert("Fond")
+        });
+    </script>
   </body>
 </html>
