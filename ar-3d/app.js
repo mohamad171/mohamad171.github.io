@@ -33,7 +33,7 @@ function setupRenderer(rendererCanvas) {
 
   // Load a 3D frame model
   const gltfLoader = new GLTFLoader();
-  gltfLoader.load("frame_1.glb", (gltf) => {
+  gltfLoader.load("frame.glb", (gltf) => {
     model = gltf.scene;
   });
 
