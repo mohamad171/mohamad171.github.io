@@ -69,7 +69,7 @@ function render() {
 // ====== Onirix SDK ======
 
 const OX = new OnirixSDK(
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUyMDIsInByb2plY3RJZCI6MTQ0MjksInJvbGUiOjMsImlhdCI6MTYxNjc2MDI5M30.knKDX5vda6UyqB8CobqgPQ8BS7OYQo4RDfIuGm-EJGg"
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMzNzM0LCJyb2xlIjoxLCJpYXQiOjE3MDM0MjczMTR9.YvOKlvzrAX-X4pWCKisgWaEJdg0Fo382w-TYIznvALw"
 );
 
 const config = {
